@@ -147,7 +147,8 @@ p, blockquote, ul, ol, dl {
     font-size: 2.2rem; }
 
 .site-footer-item {
-  margin: auto; }
+  margin: auto;
+  text-align: center; }
 
 .post-excerpt {
   margin-bottom: 5px; }
