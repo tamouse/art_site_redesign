@@ -1,0 +1,277 @@
+/* FONTS */
+@import 'https://fonts.googleapis.com/css?family=Eczar|Space+Mono|Work+Sans';
+/* COLORS */
+/* calculate fontSize and lineHeight */
+.flex-row-container, .site-footer, .navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center; }
+
+.flex-row-item, .site-footer-item, .navitem {
+  flex-grow: 1; }
+
+* {
+  box-sizing: border-box; }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* -------------------------------------------------------------------------------- */
+/* end of reset */
+/* -------------------------------------------------------------------------------- */
+/* typogrpahy */
+html, body {
+  font-family: "Eczar", "Garamond", serif;
+  font-size: 1.1rem;
+  line-height: 1.76rem;
+  color: snow;
+  background: #232323; }
+  @media screen and (min-width: 48.62rem) {
+    html, body {
+      width: 48.62rem;
+      margin: auto; } }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Work Sans", "Helvetica Neue", sans-serif; }
+
+h1 {
+  font-size: 2.2rem;
+  line-height: 2.42rem; }
+
+h2 {
+  font-size: 1.76rem;
+  line-height: 1.936rem; }
+
+h3 {
+  font-size: 1.32rem;
+  line-height: 1.452rem; }
+
+h4 {
+  font-size: 1.1rem;
+  line-height: 1.21rem; }
+
+h5 {
+  font-size: 0.88rem;
+  line-height: 0.968rem; }
+
+h6 {
+  font-size: 0.77rem;
+  line-height: 0.847rem; }
+
+code, tt, kbd {
+  color: inherit;
+  background: inherit;
+  font-family: "Space Mono", monospace;
+  font-size: 1.32rem; }
+
+p {
+  margin-top: 0.88rem;
+  font-size: 1.1rem;
+  line-height: 1.76rem; }
+
+a, a:visited, a:hover, a:active {
+  color: snow;
+  background: #232323; }
+
+a,
+a:visited {
+  text-decoration: none; }
+
+a:hover,
+a:active {
+  text-decoration: underline; }
+
+strong {
+  font-weight: 700; }
+
+em {
+  font-weight: 300;
+  font-style: italic; }
+
+p, blockquote, ul, ol, dl {
+  margin-bottom: 1.5rem; }
+
+.feature-section {
+  margin: 0;
+  padding: 3px 3px;
+  border-bottom: 1px solid black; }
+
+.top-nav {
+  width: 100%; }
+
+.site-header, .site-footer {
+  width: 100%;
+  margin: 0;
+  padding: 7px; }
+
+.site-header {
+  font-family: "Work Sans", "Helvetica Neue", sans-serif;
+  font-size: 2.2rem; }
+  .site-header a, .site-header a:visited, .site-header a:hover, .site-header a:active {
+    font-family: "Work Sans", "Helvetica Neue", sans-serif;
+    font-size: 2.2rem; }
+
+.site-footer-item {
+  margin: auto; }
+
+.post-excerpt {
+  margin-bottom: 5px; }
+
+.post-excerpt-image {
+  width: 30%;
+  height: 30%;
+  float: left;
+  margin: 0 7px 7px 0; }
+
+.post-meta {
+  font-size: 85%;
+  font-weight: 300; }
+
+.category-list {
+  list-style: none;
+  display: inline; }
+  .category-list > li {
+    display: inline-block; }
+  .category-list > li:after {
+    content: " | "; }
+  .category-list > li:last-child:after {
+    content: ""; }
+
+.container {
+  padding: 0 5%; }
+  @media screen and (min-width: 48.62rem) {
+    .container {
+      padding: 0; } }
+
+ul.bullets {
+  list-style: disc; }
+  ul.bullets > li {
+    margin-left: 1.5rem; }
+
+ol.numbered {
+  list-style: decimal; }
+  ol.numbered > li {
+    margin-left: 1.5rem; }
+
+ol.alpha {
+  list-style: lower-alpha; }
+  ol.alpha > li {
+    margin-left: 1.5rem; }
+
+dl.indented > dd {
+  margin-left: 1.5rem; }
+
+dl.parallel:after {
+  margin-bottom: 1.5rem; }
+dl.parallel > dt {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 25%;
+  min-width: 25%; }
+dl.parallel > dd {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 70%; }
+
+.primary-color, .button, .button a, .button a:visited, .button a:hover {
+  color: snow;
+  background-color: royalblue; }
+
+.secondary-color, .button-secondary, .button-secondary a, .button-secondary a:visited, .button-secondary a:hover {
+  color: snow;
+  background-color: MediumSeaGreen; }
+
+.button {
+  text-align: center;
+  border: 1px solid #1a3ca2;
+  font-family: "Work Sans", "Helvetica Neue", sans-serif; }
+  .button a, .button a:visited, .button a:hover, .button a:visited {
+    font-family: inherit;
+    padding: 20px;
+    display: block; }
+
+.block-link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 7px; }
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: inherit;
+  background: inherit;
+  font-family: "Work Sans", "Helvetica Neue", sans-serif; }
+
+.h1 {
+  font-size: 2.2rem;
+  line-height: 2.42rem; }
+
+.h2 {
+  font-size: 1.76rem;
+  line-height: 1.936rem; }
+
+.h3 {
+  font-size: 1.32rem;
+  line-height: 1.452rem; }
+
+.h4 {
+  font-size: 1.1rem;
+  line-height: 1.21rem; }
+
+.h5 {
+  font-size: 0.88rem;
+  line-height: 0.968rem; }
+
+.h6 {
+  font-size: 0.77rem;
+  line-height: 0.847rem; }
+
+.img-responsive {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  margin: auto; }
+
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: " "; }
+.clearfix:after {
+  clear: both; }
+
+@media screen and (max-width: 720px) {
+  .hide-on-small {
+    display: none; } }
