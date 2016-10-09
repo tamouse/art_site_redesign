@@ -1,0 +1,9 @@
+---
+layout: master
+---
+
+{% for post in site.posts %}
+<article class="post-entry">
+  {% include post_excerpt.html post=post %}
+</article>
+{% endfor %}

@@ -1,0 +1,7 @@
+{% capture raw_categories %}
+{% for category in include.source.categories %}
+{{ category[0] }}
+{% endfor %}
+{% endcapture %}
+{% assign categories = raw_categories | split:' ' %}
+{% assign sorted_categories = categories | sort %}

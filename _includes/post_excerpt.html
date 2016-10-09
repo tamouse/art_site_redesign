@@ -1,0 +1,19 @@
+{% assign post = include.post %}
+<div class="post-excerpt clearfix">
+  {% if post.featured_image %}<img src="{{post.featured_image.thumb}}" class="post-excerpt-image" alt="{{ post.title | escape }} featured image" />{% endif %}
+  <header class="post-header">
+    <div><a href="{{ post.url | relative_url}}" class="h2">{{post.title}}</a></div>
+    <div class="post-meta">
+      <span>{{ post.date | date_to_string }}</span>
+      {% if post.categories %}
+      |
+      <ul class="category-list">
+	{% for category in post.categories %}
+	<li><a href="{{ category | relative_url}}">{{ category }}</a></li>
+	{% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </header>
+  <div class="post-excerpt-body">{{ post.excerpt | markdownify }}</div>
+</div>

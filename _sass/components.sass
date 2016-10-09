@@ -1,29 +1,73 @@
-.button
-  text-align: center
+.primary-color
   color: $brandTextColor
   background-color: $brandPrimary
+
+.secondary-color
+  color: $brandTextColor
+  background-color: $brandSecondary
+
+.flex-row-container
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  justify-content: center
+  align-items: center
+
+.flex-row-item
+  flex-grow: 1
+
+.button
+  @extend .primary-color
+  text-align: center
   border: 1px solid darken($brandPrimary, 20%)
   font-family: $headingFontStack
   a, a:visited, a:hover, a:visited
+    @extend .primary-color
     font-family: inherit
     padding: 5px
-    color: $brandTextColor
-    background-color: $brandPrimary
     display: block
 
 .button-secondary
-  background-color: $brandSecondary
+  @extend .secondary-color
   a, a:visited, a:hover, a:visited
-    background-color: $brandSecondary
-
+    @extend .secondary-color
 
 .block-link
-  @extend h1
   display: block
   text-align: center
   text-decoration: none
-  color: inherit
-  background-color: inherit
   padding: 7px
-  &:visited, &:hover, &:active
-    text-decoration: inherit
+
+.h1, .h2, .h3, .h4, .h5, .h6
+  color: inherit
+  background: inherit
+  font-family: $headingFontStack
+
+.h1
+  +fontSize($headingFontSize, 1.0, $headingLineHeightFactor)
+.h2
+  +fontSize($headingFontSize, 0.8, $headingLineHeightFactor)
+.h3
+  +fontSize($headingFontSize, 0.6, $headingLineHeightFactor)
+.h4
+  +fontSize($headingFontSize, 0.5, $headingLineHeightFactor)
+.h5
+  +fontSize($headingFontSize, 0.4, $headingLineHeightFactor)
+.h6
+  +fontSize($headingFontSize, 0.35, $headingLineHeightFactor)
+
+.img-responsive
+  max-width: 100%
+  display: block
+  text-align: center
+
+.clearfix
+  &:before,&:after
+    display: table
+    content: ' '
+  &:after
+    clear: both
+
+.hide-on-small
+  @media screen and (max-width: 720px)
+    display: none

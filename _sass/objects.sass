@@ -1,36 +1,55 @@
 .feature-section
   margin: 0
   padding: 3px 3px
-  border-top: 1px solid black
   border-bottom: 1px solid black
-
 
 .top-nav
   width: 100%
 
-.flex-row-container
-  display: flex
-  flex-direction: row
-  flex-wrap: nowrap
-  justify-content: center
-  align-items: center
+.site-header, .site-footer
+  width: 100%
+  margin: 0
+  padding: 7px
 
-.flex-row-item
-  flex-grow: 1
+.site-header
+  font-family: $headingFontStack
+  font-size: $headingFontSize
+  a, a:visited, a:hover, a:active
+    font-family: $headingFontStack
+    font-size: $headingFontSize
 
-/* NavBar
+.site-footer
+  @extend .flex-row-container
+
+.site-footer-item
+  @extend .flex-row-item
+  text-align: center
+
 .navbar
   @extend .flex-row-container
 
 .navitem
   @extend .flex-row-item
 
-.page-header, .page-footer
-  padding: 7px
+.post-excerpt
+  margin-bottom: 5px
 
-.page-footer
-  @extend .flex-row-container
+.post-excerpt-image
+  width: 30%
+  height: 30%
+  float: left
+  margin: 0 7px 7px 0
 
-.page-footer-item
-  @extend .flex-row-item
-  text-align: center
+.post-meta
+  font-size: 85%
+  font-weight: 300
+
+.category-list
+  list-style: none
+  display: inline
+  & > li
+    display: inline-block
+  & > li:after
+    content: ' | '
+  & > li:last-child:after
+    content: ''

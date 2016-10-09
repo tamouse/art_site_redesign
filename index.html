@@ -10,11 +10,15 @@ layout: master
 </header>
 
 <section class="feature-section">
-  <h1>Gallery of Featured Images</h1>
+  <img src="http://placekitten.com/800/600" class="img-responsive" alt="kitten" />
 </section>
 <section class="feature-section">
-  <h1>Latest Post</h1>
+  {% assign latest_post = site.posts[0] %}
+  {% include post_excerpt.html post=latest_post %}
 </section>
 <section class="feature-section">
-  <h1>Categories</h1>
+  {% include collect_categories.html source=site %}
+  {% for category in sorted_categories %}
+  <a href="{{ category | relative_url }}" class="block-link h2">{{ category }}</a>
+  {% endfor %}
 </section>
