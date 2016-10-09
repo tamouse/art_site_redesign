@@ -1,0 +1,14 @@
+title: art.tamouse.org
+email: tamara@tamouse.org
+description: art by tamouse
+
+# Build settings
+baseurl: ""
+url: ""
+markdown: kramdown
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.txt

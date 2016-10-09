@@ -1,0 +1,29 @@
+.button
+  text-align: center
+  color: $brandTextColor
+  background-color: $brandPrimary
+  border: 1px solid darken($brandPrimary, 20%)
+  font-family: $headingFontStack
+  a, a:visited, a:hover, a:visited
+    font-family: inherit
+    padding: 5px
+    color: $brandTextColor
+    background-color: $brandPrimary
+    display: block
+
+.button-secondary
+  background-color: $brandSecondary
+  a, a:visited, a:hover, a:visited
+    background-color: $brandSecondary
+
+
+.block-link
+  @extend h1
+  display: block
+  text-align: center
+  text-decoration: none
+  color: inherit
+  background-color: inherit
+  padding: 7px
+  &:visited, &:hover, &:active
+    text-decoration: inherit
