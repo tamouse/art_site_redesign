@@ -9,6 +9,8 @@ markdown: kramdown
 gems:
   - jekyll-feed
 exclude:
+  - .sass-cache/
+  - Guardfile
   - Gemfile
   - Gemfile.lock
   - README.txt

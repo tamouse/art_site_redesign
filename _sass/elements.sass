@@ -45,12 +45,16 @@ table
 
 /* typogrpahy
 
-html
+html, body
   font-family: $baseFontStack
   font-size: $baseFontSize
   line-height: $baseLineHeight
   color: $baseColor
   background: $baseBackground
+  @media screen and (min-width: $staticWidth)
+    width: $staticWidth
+    margin: auto
+
 
 h1, h2, h3, h4, h5, h6
   font-family: $headingFontStack
@@ -76,7 +80,8 @@ code, tt, kbd
 
 p
   margin-top: $baseLineHeight / 2.0
-
+  font-size: $baseFontSize
+  line-height: $baseLineHeight
 
 a, a:visited, a:hover, a:active
   color: $baseColor
@@ -95,3 +100,6 @@ strong
 em
   font-weight: 300
   font-style: italic
+
+p, blockquote, ul, ol, dl
+  margin-bottom: $paragraphBottom

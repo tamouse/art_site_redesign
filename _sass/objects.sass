@@ -23,6 +23,7 @@
 
 .site-footer-item
   @extend .flex-row-item
+  margin: auto
   text-align: center
 
 .navbar
@@ -30,6 +31,10 @@
 
 .navitem
   @extend .flex-row-item
+
+.page-header, .post-header
+  margin: 5px 0
+  padding: 0 5px
 
 .post-excerpt
   margin-bottom: 5px
@@ -44,6 +49,10 @@
   font-size: 85%
   font-weight: 300
 
+.post-body
+  img
+    @extend .img-responsive
+
 .category-list
   list-style: none
   display: inline
@@ -53,3 +62,43 @@
     content: ' | '
   & > li:last-child:after
     content: ''
+
+.container
+  padding: 0 5%
+  @media screen and (min-width: $staticWidth)
+    padding: 0
+
+ul.bullets
+  list-style: disc
+  & > li
+    margin-left: 1.5rem
+
+ol.numbered
+  list-style: decimal
+  & > li
+    margin-left: $listIndent
+
+
+ol.alpha
+  list-style: lower-alpha
+  & > li
+    margin-left: $listIndent
+
+dl.indented
+  & > dd
+    margin-left: $listIndent
+
+
+dl.parallel
+  &:after
+    margin-bottom: $paragraphBottom
+  & > dt
+    display: inline-block
+    vertical-align: top
+    max-width: 25%
+    min-width: 25%
+  & > dd
+    display: inline-block
+    vertical-align: top
+    max-width: 70%
+    min-width: 70%

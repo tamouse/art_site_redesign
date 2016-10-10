@@ -6,16 +6,6 @@
   color: $brandTextColor
   background-color: $brandSecondary
 
-.flex-row-container
-  display: flex
-  flex-direction: row
-  flex-wrap: nowrap
-  justify-content: center
-  align-items: center
-
-.flex-row-item
-  flex-grow: 1
-
 .button
   @extend .primary-color
   text-align: center
@@ -24,7 +14,7 @@
   a, a:visited, a:hover, a:visited
     @extend .primary-color
     font-family: inherit
-    padding: 5px
+    padding: 20px
     display: block
 
 .button-secondary
@@ -58,8 +48,9 @@
 
 .img-responsive
   max-width: 100%
+  width: 100%
   display: block
-  text-align: center
+  margin: auto
 
 .clearfix
   &:before,&:after

@@ -1,14 +1,7 @@
 ---
 layout: master
 ---
-
-<header class="top-nav">
-  <nav class="navbar">
-    <div class="navitem button"><a href="{{ "/posts" | relative_url }}">posts</a></div>
-    <div class="navitem button"><a href="{{ "/contact" | relative_url }}">contact</a></div>
-  </nav>
-</header>
-
+{% include top_nav.html %}
 <section class="feature-section">
   <img src="http://placekitten.com/800/600" class="img-responsive" alt="kitten" />
 </section>
@@ -19,6 +12,6 @@ layout: master
 <section class="feature-section">
   {% include collect_categories.html source=site %}
   {% for category in sorted_categories %}
-  <a href="{{ category | relative_url }}" class="block-link h2">{{ category }}</a>
+  <a href="#" class="block-link h2">{{ category }}</a>
   {% endfor %}
 </section>
