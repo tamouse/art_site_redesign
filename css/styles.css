@@ -150,6 +150,10 @@ p, blockquote, ul, ol, dl {
   margin: auto;
   text-align: center; }
 
+.page-header, .post-header {
+  margin: 5px 0;
+  padding: 0 5px; }
+
 .post-excerpt {
   margin-bottom: 5px; }
 
@@ -207,7 +211,8 @@ dl.parallel > dt {
 dl.parallel > dd {
   display: inline-block;
   vertical-align: top;
-  max-width: 70%; }
+  max-width: 70%;
+  min-width: 70%; }
 
 .primary-color, .button, .button a, .button a:visited, .button a:hover {
   color: snow;
@@ -261,7 +266,7 @@ dl.parallel > dd {
   font-size: 0.77rem;
   line-height: 0.847rem; }
 
-.img-responsive {
+.img-responsive, .post-body img {
   max-width: 100%;
   width: 100%;
   display: block;

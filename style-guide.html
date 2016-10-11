@@ -12,6 +12,9 @@
   <link rel="canonical" href="https://tamouse.github.io/art_site_redesign/style-guide.html">
   <link rel="alternate" type="application/rss+xml" title="art.tamouse.org" href="/art_site_redesign/feed.xml">
 
+  <!-- TODO: add flickety to front page feature gallery -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">
+
   
 </head>
 
@@ -21,7 +24,18 @@
 </header>
 
     <section class="site-content" aria-label="Content">
-      <div class="container">
+      <header class="top-nav">
+  <nav class="navbar">
+    <div class="navitem button"><a href="/art_site_redesign/posts">posts</a></div>
+    <div class="navitem button"><a href="/art_site_redesign/contact">contact</a></div>
+  </nav>
+</header>
+
+<article class="page-content">
+  <div class="page-header">
+    <h1>Colophon and Style Guide</h1>
+  </div>
+  <div class="post-body"><div class="container">
   <p>
     In a fit of inspiration after watching and reading some more design
     instruction, and just wanting something better, I decided to start
@@ -146,12 +160,16 @@
     </p>
   </section>
 </div>
+</div>
+</article>
 
     </section>
     <footer class="site-footer">
   <div class="site-footer-item copyright-notice "><a href="http://www.tamouse.org" target="_blank" class="exteral-link">&copy; Tamara Temple</a></div>
   <div class="site-footer-item"><a href="/art_site_redesign/style-guide.html">Colophon</a></div>
 </footer>
+
+    <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
 
   </body>
 </html>
