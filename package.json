@@ -1,0 +1,31 @@
+{
+  "name": "art.tamouse.org",
+  "version": "4.0.0",
+  "description": "art blog",
+  "main": "index.html",
+  "scripts": {
+    "start": "./start.sh",
+    "build": "bundle exec jekyll build --config=_config.yml,_staging.yml",
+    "publish": "npm run build && (cd _site&&git aa&&git cim yolo&&git pufu)",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamouse/art_site_redesign.git"
+  },
+  "keywords": [
+    "art",
+    "watercolour",
+    "ink",
+    "pen",
+    "tamouse",
+    "blog",
+    "jekyll"
+  ],
+  "author": "tamouse@gmail.com",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/tamouse/art_site_redesign/issues"
+  },
+  "homepage": "https://github.com/tamouse/art_site_redesign#readme"
+}
